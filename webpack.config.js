@@ -5,7 +5,7 @@ module.exports = {
  entry: ['babel-polyfill', './src/main.js'],
  output: {
    path: path.resolve(__dirname, './dist'),
-   publicPath: '/dist/',
+   publicPath: '',
    filename: 'build.js'
  },
  module: {
@@ -49,7 +49,7 @@ module.exports = {
    historyApiFallback: true,
    noInfo: true,
    overlay: true,
-   host: '0.0.0.0',
+   host: '',
    port: 8080
  },
  performance: {
