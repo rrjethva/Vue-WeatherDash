@@ -1,7 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
 
-
 module.exports = {
  entry: ['babel-polyfill', './src/main.js'],
  output: {
@@ -50,7 +49,7 @@ module.exports = {
    historyApiFallback: true,
    noInfo: true,
    overlay: true,
-   host: 'localhost',
+   host: '0.0.0.0',
    port: 8080
  },
  performance: {
